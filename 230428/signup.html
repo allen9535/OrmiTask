@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>회원가입</title>
+  <link rel="stylesheet" href="./signup-style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>회원가입</h1>
+    <p>원활한 서비스 이용을 위해 회원가입을 해주세요</p>
+
+    <form method="post">
+      <div class="userId">
+        <label for="user-id">아이디</label><input type="text" id="user-id">
+      </div>
+
+      <div class="userEmail">
+        <label for="user-email">이메일</label><input type="email" id="user-email">
+      </div>
+
+      <div class="userPw">
+        <label for="user-pw">비밀번호</label><input type="password" id="user-pw">
+      </div>
+
+      <div class="userNickname">
+        <label for="user-nickname">닉네임</label><input type="text" id="user-nickname">
+      </div>
+
+      <fieldset class="gender">
+        <legend class="title">성별</legend>
+
+        <ul class="select">
+          <li><input type="radio" name="gender" value="male" id="male">남성</li>
+          <li><input type="radio" name="gender" value="female" id="female">여성</li>
+          <li><input type="radio" name="gender" value="no" id="no">선택 안함</li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="tech">
+        <legend class="title">사용 기술</legend>
+
+        <ul class="select">
+          <li><input type="checkbox" name="html" id="html">HTML</li>
+          <li><input type="checkbox" name="css" id="css">CSS</li>
+          <li><input type="checkbox" name="javascript" id="javascript">JavaScript</li>
+          <li><input type="checkbox" name="python" id="python">Python</li>
+          <li><input type="checkbox" name="django" id="django">Django</li>
+          <li><input type="checkbox" name="github" id="github">GitHub</li>
+          <li><input type="checkbox" name="postgresql" id="postgresql">PostgreSQL</li>
+        </ul>
+      </fieldset>
+
+      <button type="submit">회원가입</button>
+    </form>
+  </div>
+</body>
+
+</html>
