@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 30px 270px;
+}
+
+/* 테이블 크기 설정 */
+/* 테두리의 겹쳐 나오는 부분을 수정 */
+table {
+  width: 1000px;
+  margin: auto;
+  border-collapse: collapse;
+  border-top: 3px solid black;
+  border-bottom: 2px solid #ccc;
+}
+
+/* 테이블 제목에 해당하는 열에 색 입히기 */
+thead {
+  background-color: #eee;
+  height: 50px;
+}
+
+/* 테이블의 문자열을 가운데 정렬하고 테두리 만들기 */
+tbody tr {
+  height: 50px;
+  text-align: center;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
