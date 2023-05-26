@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>인구 순위 차트</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <canvas id="populationChart"></canvas>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var data = [{
+                "지역": "서울",
+                "인구순위": 1,
+                "인구": 9411
+            }, {
+                "지역": "부산",
+                "인구순위": 2,
+                "인구": 3299
+            }, {
+                "지역": "대구",
+                "인구순위": 3,
+                "인구": 2363
+            }, {
+                "지역": "인천",
+                "인구순위": 4,
+                "인구": 2961
+            }, {
+                "지역": "광주",
+                "인구순위": 5,
+                "인구": 1463
+            }];
+
+            var labels = [];
+            var populations = [];
+
+            data.forEach(function (item) {
+                labels.push(item.지역);
+                populations.push(item.인구);
+            });
+
+            var ctx = document.getElementById("populationChart").getContext("2d");
+            var chart = new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: "인구",
+                        data: populations,
+                        backgroundColor: "rgba(75, 192, 192, 0.2)",
+                        borderColor: "rgba(75, 192, 192, 1)",
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
