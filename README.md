@@ -411,3 +411,9 @@
 
 -   실습을 통해 Django의 사용법에 대해 공부했습니다.
     -   serializer, static, media, i18n
+
+## AWS
+
+### 23년 07월 11일
+-   AWS와 관련된 수업이 시작되었습니다.
+    -   AWS에 인스턴스를 생성하는 법, Linux 기초 명령어
